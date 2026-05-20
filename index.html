@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PetCare Villahermosa · Paseo y Cuidado de Mascotas</title>
+  <meta name="description" content="Servicio profesional de paseo y cuidado de perros y gatos en Villahermosa, Tabasco. Precios desde $80 MXN. Contáctanos por WhatsApp." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Nunito:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ══════════════════════════════
+       NAVBAR
+  ══════════════════════════════ -->
+  <header class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#inicio" class="logo">
+        <span class="logo-icon">🐾</span>
+        <span class="logo-text">PetCare <em>Villaher</em></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#servicios">Servicios</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#zonas">Zonas</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+      <a
+        class="nav-wa"
+        href="https://wa.me/529931234567?text=Hola!%20Vi%20tu%20página%20y%20me%20interesa%20el%20servicio%20para%20mi%20mascota%20%F0%9F%90%BE"
+        target="_blank"
+        rel="noopener"
+      >
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.856L.057 23.882a.5.5 0 0 0 .611.611l6.041-1.476A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 0 1-5.006-1.368l-.36-.214-3.724.91.934-3.629-.235-.373A9.789 9.789 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+        Escríbeme
+      </a>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+  <section class="hero" id="inicio">
+    <div class="hero-bg-shapes" aria-hidden="true">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+
+    <div class="hero-content reveal">
+      <div class="hero-badge">✨ Villahermosa, Tabasco</div>
+      <h1>Tu mascota merece<br><em>el mejor cuidado</em></h1>
+      <p class="hero-sub">Paseos, cuidado personalizado y mucho amor para perros y gatos. Lunes a sábado, 7am a 7pm. Precios desde $80 MXN.</p>
+      <div class="hero-ctas">
+        <a
+          class="btn-primary"
+          href="https://wa.me/529931234567?text=Hola!%20Me%20gustaría%20agendar%20un%20servicio%20para%20mi%20mascota%20%F0%9F%90%BE"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.856L.057 23.882a.5.5 0 0 0 .611.611l6.041-1.476A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 0 1-5.006-1.368l-.36-.214-3.724.91.934-3.629-.235-.373A9.789 9.789 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Escríbeme al WhatsApp
+        </a>
+        <a class="btn-outline" href="#servicios">Ver precios →</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong>$80</strong>
+          <span>precio base</span>
+        </div>
+        <div class="hero-stat">
+          <strong>5</strong>
+          <span>zonas cubiertas</span>
+        </div>
+        <div class="hero-stat">
+          <strong>Lun–Sáb</strong>
+          <span>disponibilidad</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-gallery reveal reveal-delay">
+      <div class="gallery-main">
+        <img
+          src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80&auto=format&fit=crop"
+          alt="Perro golden retriever feliz en un paseo"
+          loading="eager"
+        />
+        <div class="gallery-badge">🐕 Paseos diarios</div>
+      </div>
+      <div class="gallery-side">
+        <div class="gallery-small">
+          <img
+            src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=300&q=80&auto=format&fit=crop"
+            alt="Gato naranja descansando cómodamente"
+            loading="eager"
+          />
+        </div>
+        <div class="gallery-small">
+          <img
+            src="https://images.unsplash.com/photo-1601979031925-424e53b6caaa?w=300&q=80&auto=format&fit=crop"
+            alt="Cachorro pequeño muy tierno"
+            loading="eager"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       SOBRE MÍ (trust strip)
+  ══════════════════════════════ -->
+  <section class="trust-strip">
+    <div class="container">
+      <div class="trust-item reveal">
+        <span class="trust-icon">💚</span>
+        <p>Atención personalizada para cada mascota</p>
+      </div>
+      <div class="trust-divider" aria-hidden="true"></div>
+      <div class="trust-item reveal">
+        <span class="trust-icon">📍</span>
+        <p>Servicio a domicilio en tu colonia</p>
+      </div>
+      <div class="trust-divider" aria-hidden="true"></div>
+      <div class="trust-item reveal">
+        <span class="trust-icon">💬</span>
+        <p>Comunicación directa por WhatsApp</p>
+      </div>
+      <div class="trust-divider" aria-hidden="true"></div>
+      <div class="trust-item reveal">
+        <span class="trust-icon">🕖</span>
+        <p>Lunes a sábado de 7am a 7pm</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       SERVICIOS
+  ══════════════════════════════ -->
+  <section class="section servicios-section" id="servicios">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Planes y precios</span>
+        <h2>¿Qué necesita tu mascota?</h2>
+        <p>Servicios pensados para perros y gatos. Sin formularios, sin complicaciones. Solo escríbeme.</p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Servicio 1 -->
+        <article class="service-card reveal">
+          <div class="service-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1534361960057-19f4434aed1b?w=500&q=80&auto=format&fit=crop"
+              alt="Perro disfrutando su paseo en el parque"
+              loading="lazy"
+            />
+            <div class="service-tag-img">Más popular</div>
+          </div>
+          <div class="service-body">
+            <div class="service-emoji">🐕</div>
+            <h3>Paseo de perro</h3>
+            <p>Paseo de 30 minutos en tu zona. Actividad física, socialización y mucho cariño para tu peludo.</p>
+            <div class="service-price">
+              <span class="price">$80 <small>MXN</small></span>
+              <span class="duration">/ 30 min</span>
+            </div>
+            <a
+              class="service-cta"
+              href="https://wa.me/529931234567?text=Hola!%20Me%20interesa%20el%20paseo%20de%20perro%20%F0%9F%90%95%20%C2%BFcuándo%20tienen%20disponibilidad?"
+              target="_blank"
+              rel="noopener"
+            >Agendar por WhatsApp →</a>
+          </div>
+        </article>
+
+        <!-- Servicio 2 -->
+        <article class="service-card reveal reveal-delay">
+          <div class="service-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=500&q=80&auto=format&fit=crop"
+              alt="Gato con arnés listo para su paseo"
+              loading="lazy"
+            />
+            <div class="service-tag-img special">Con arnés</div>
+          </div>
+          <div class="service-body">
+            <div class="service-emoji">🐈</div>
+            <h3>Paseo de gato</h3>
+            <p>Con arnés especializado. Más paciencia, más cuidado. Perfecto para gatos curiosos y aventureros.</p>
+            <div class="service-price">
+              <span class="price">$90 <small>MXN</small></span>
+              <span class="duration">/ 30 min</span>
+            </div>
+            <a
+              class="service-cta"
+              href="https://wa.me/529931234567?text=Hola!%20Me%20interesa%20el%20paseo%20de%20gato%20con%20arnés%20%F0%9F%90%88%20%C2%BFcuándo%20tienen%20disponibilidad?"
+              target="_blank"
+              rel="noopener"
+            >Agendar por WhatsApp →</a>
+          </div>
+        </article>
+
+        <!-- Servicio 3 -->
+        <article class="service-card reveal reveal-delay-2">
+          <div class="service-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=500&q=80&auto=format&fit=crop"
+              alt="Dos perros jugando felices juntos"
+              loading="lazy"
+            />
+          </div>
+          <div class="service-body">
+            <div class="service-emoji">⏱️</div>
+            <h3>Cuidado por hora</h3>
+            <p>Supervisión completa mientras estás fuera. Tu mascota bien atendida, tú con la mente tranquila.</p>
+            <div class="service-price">
+              <span class="price">$150 <small>MXN</small></span>
+              <span class="duration">/ hora</span>
+            </div>
+            <a
+              class="service-cta"
+              href="https://wa.me/529931234567?text=Hola!%20Me%20interesa%20el%20cuidado%20por%20hora%20%F0%9F%90%BE%20%C2%BFcuándo%20tienen%20disponibilidad?"
+              target="_blank"
+              rel="noopener"
+            >Agendar por WhatsApp →</a>
+          </div>
+        </article>
+      </div>
+
+      <div class="services-note reveal">
+        <span>🐾</span>
+        <p>¿Tienes varias mascotas? Los precios pueden ajustarse. <a href="https://wa.me/529931234567?text=Hola!%20Tengo%20varias%20mascotas%2C%20me%20pueden%20dar%20información%20sobre%20precios?" target="_blank" rel="noopener">Platicamos por WhatsApp</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       GALERÍA
+  ══════════════════════════════ -->
+  <section class="gallery-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Nuestros amigos</span>
+        <h2>Peludos felices</h2>
+      </div>
+      <div class="photo-grid reveal">
+        <div class="photo-item tall">
+          <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=400&q=80&auto=format&fit=crop" alt="Golden retriever sonriente" loading="lazy" />
+        </div>
+        <div class="photo-item">
+          <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=400&q=80&auto=format&fit=crop" alt="Gato persa esponjoso" loading="lazy" />
+        </div>
+        <div class="photo-item">
+          <img src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?w=400&q=80&auto=format&fit=crop" alt="Cachorro jugando en el pasto" loading="lazy" />
+        </div>
+        <div class="photo-item wide">
+          <img src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=600&q=80&auto=format&fit=crop" alt="Perro y gato siendo amigos" loading="lazy" />
+        </div>
+        <div class="photo-item">
+          <img src="https://images.unsplash.com/photo-1529429617124-95b109e86bb8?w=400&q=80&auto=format&fit=crop" alt="Gato atigrado mirando a la cámara" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       HORARIOS
+  ══════════════════════════════ -->
+  <section class="section horarios-section" id="horarios">
+    <div class="container horarios-grid">
+      <div class="horarios-img reveal">
+        <img
+          src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&q=80&auto=format&fit=crop"
+          alt="Persona paseando perros en el parque"
+          loading="lazy"
+        />
+        <div class="horarios-img-overlay">
+          <p>🌤️ Disponible todos los días de semana</p>
+        </div>
+      </div>
+
+      <div class="horarios-content reveal reveal-delay">
+        <span class="section-tag">Disponibilidad</span>
+        <h2>Horarios de atención</h2>
+        <p class="horarios-sub">Siempre puntual, siempre comprometido con el bienestar de tu mascota.</p>
+
+        <div class="schedule-list">
+          <div class="schedule-row">
+            <div class="schedule-day">
+              <span class="day-icon">☀️</span>
+              <span>Lunes – Viernes</span>
+            </div>
+            <span class="schedule-hours">7:00 am – 7:00 pm</span>
+          </div>
+          <div class="schedule-row">
+            <div class="schedule-day">
+              <span class="day-icon">🌅</span>
+              <span>Sábado</span>
+            </div>
+            <span class="schedule-hours">7:00 am – 7:00 pm</span>
+          </div>
+          <div class="schedule-row emergency">
+            <div class="schedule-day">
+              <span class="day-icon">🌙</span>
+              <span>Domingo</span>
+            </div>
+            <span class="schedule-hours emergency-text">Solo emergencias</span>
+          </div>
+        </div>
+
+        <a
+          class="btn-primary"
+          href="https://wa.me/529931234567?text=Hola!%20Quisiera%20agendar%20un%20servicio%20%F0%9F%90%BE"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.856L.057 23.882a.5.5 0 0 0 .611.611l6.041-1.476A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 0 1-5.006-1.368l-.36-.214-3.724.91.934-3.629-.235-.373A9.789 9.789 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          Agendar mi cita
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       ZONAS
+  ══════════════════════════════ -->
+  <section class="section zonas-section" id="zonas">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Cobertura</span>
+        <h2>Zonas de servicio en Villahermosa</h2>
+        <p>Atiendo de forma exclusiva estas colonias. ¿Vives fuera? Escríbeme y lo evaluamos juntos.</p>
+      </div>
+
+      <div class="zonas-grid reveal">
+        <div class="zona-card">
+          <div class="zona-num">01</div>
+          <span class="zona-emoji">🏙️</span>
+          <h3>Tabasco 2000</h3>
+          <p>Zona comercial y residencial</p>
+        </div>
+        <div class="zona-card">
+          <div class="zona-num">02</div>
+          <span class="zona-emoji">🏛️</span>
+          <h3>Centro</h3>
+          <p>Área histórica de Villahermosa</p>
+        </div>
+        <div class="zona-card">
+          <div class="zona-num">03</div>
+          <span class="zona-emoji">🌿</span>
+          <h3>Atasta de Serra</h3>
+          <p>Colonia residencial tranquila</p>
+        </div>
+        <div class="zona-card">
+          <div class="zona-num">04</div>
+          <span class="zona-emoji">🌳</span>
+          <h3>Tamulté de las Barrancas</h3>
+          <p>Zona con parques y áreas verdes</p>
+        </div>
+        <div class="zona-card">
+          <div class="zona-num">05</div>
+          <span class="zona-emoji">💧</span>
+          <h3>Carrizal / Espejo</h3>
+          <p>Colonias con amplia cobertura</p>
+        </div>
+      </div>
+
+      <div class="zonas-footer reveal">
+        <div class="zonas-footer-icon">📍</div>
+        <div>
+          <strong>¿Tu colonia no está en la lista?</strong>
+          <p>Evalúo cada caso. Escríbeme y con gusto te digo si puedo llegar a ti.</p>
+          <a
+            href="https://wa.me/529931234567?text=Hola!%20Quiero%20saber%20si%20dan%20servicio%20en%20mi%20colonia"
+            target="_blank"
+            rel="noopener"
+          >Consultar mi zona →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       CONTACTO CTA
+  ══════════════════════════════ -->
+  <section class="section contacto-section" id="contacto">
+    <div class="container">
+      <div class="contacto-box reveal">
+        <div class="contacto-img">
+          <img
+            src="https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=500&q=80&auto=format&fit=crop"
+            alt="Perro y gato juntos felices"
+            loading="lazy"
+          />
+        </div>
+        <div class="contacto-content">
+          <span class="section-tag">¡Hablemos!</span>
+          <h2>¿Lista tu mascota para su primer paseo?</h2>
+          <p>Sin formularios, sin esperas. Un mensaje y en minutos coordinamos todo lo que necesitas.</p>
+
+          <div class="contacto-info">
+            <div class="info-item">
+              <span>📱</span>
+              <span>Solo atendemos por <strong>WhatsApp</strong></span>
+            </div>
+            <div class="info-item">
+              <span>⚡</span>
+              <span>Respuesta rápida en horario de atención</span>
+            </div>
+            <div class="info-item">
+              <span>🐾</span>
+              <span>Cuéntame de tu mascota y te asesoro</span>
+            </div>
+          </div>
+
+          <a
+            class="btn-wa-big"
+            href="https://wa.me/529931234567?text=Hola!%20Me%20interesa%20el%20servicio%20de%20paseo%20y%20cuidado%20de%20mascotas.%20%C2%BFPodrías%20darme%20más%20información?%20%F0%9F%90%BE"
+            target="_blank"
+            rel="noopener"
+          >
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.856L.057 23.882a.5.5 0 0 0 .611.611l6.041-1.476A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 0 1-5.006-1.368l-.36-.214-3.724.91.934-3.629-.235-.373A9.789 9.789 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+            Escríbeme ahora
+          </a>
+          <p class="wa-note">Al hacer clic abrirás WhatsApp con un mensaje listo para enviar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       FOOTER
+  ══════════════════════════════ -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-icon">🐾</span>
+          <span class="logo-text">PetCare <em>Villaher</em></span>
+        </div>
+        <p>Cuidado y paseo de mascotas en Villahermosa, Tabasco. Atención personalizada para perros y gatos.</p>
+      </div>
+      <div class="footer-links">
+        <strong>Servicios</strong>
+        <a href="#servicios">Paseo de perro · $80 MXN</a>
+        <a href="#servicios">Paseo de gato · $90 MXN</a>
+        <a href="#servicios">Cuidado por hora · $150 MXN</a>
+      </div>
+      <div class="footer-links">
+        <strong>Zonas</strong>
+        <span>Tabasco 2000</span>
+        <span>Centro</span>
+        <span>Atasta de Serra</span>
+        <span>Tamulté · Carrizal</span>
+      </div>
+      <div class="footer-contact">
+        <strong>Contacto</strong>
+        <a
+          href="https://wa.me/529931234567"
+          target="_blank"
+          rel="noopener"
+          class="footer-wa"
+        >
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.856L.057 23.882a.5.5 0 0 0 .611.611l6.041-1.476A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 0 1-5.006-1.368l-.36-.214-3.724.91.934-3.629-.235-.373A9.789 9.789 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+          WhatsApp
+        </a>
+        <span class="footer-hours">Lun–Sáb · 7am–7pm</span>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 PetCare Villahermosa · Hecho con 🐾 en Tabasco, México</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante WhatsApp -->
+  <a
+    class="float-wa"
+    href="https://wa.me/529931234567?text=Hola!%20Vi%20tu%20página%20y%20me%20interesa%20el%20servicio%20%F0%9F%90%BE"
+    target="_blank"
+    rel="noopener"
+    aria-label="Contactar por WhatsApp"
+    id="floatWa"
+  >
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.126 1.532 5.856L.057 23.882a.5.5 0 0 0 .611.611l6.041-1.476A11.94 11.94 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.8 9.8 0 0 1-5.006-1.368l-.36-.214-3.724.91.934-3.629-.235-.373A9.789 9.789 0 0 1 2.182 12C2.182 6.57 6.57 2.182 12 2.182S21.818 6.57 21.818 12 17.43 21.818 12 21.818z"/></svg>
+    <span class="float-tooltip">¡Escríbeme!</span>
+  </a>
+
+  <script src="main.js"></script>
+</body>
+</html>
