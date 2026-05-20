@@ -177,7 +177,8 @@
   ────────────────────────────── */
   const heroStats = document.querySelectorAll('.hero-stat strong');
 
-  function animateNumber(el, target, suffix) {
+  function animateNumber(el, target, suffix, prefix) {
+    prefix = prefix || '';
     const duration = 1200;
     const start = performance.now();
     const startVal = 0;
@@ -187,7 +188,7 @@
       const progress = Math.min(elapsed / duration, 1);
       const eased = 1 - Math.pow(1 - progress, 3); // ease-out cubic
       const current = Math.round(startVal + (target - startVal) * eased);
-      el.textContent = current + suffix;
+      el.textContent = prefix + current + suffix;
       if (progress < 1) requestAnimationFrame(update);
     }
 
@@ -202,8 +203,8 @@
         if (entry.isIntersecting) {
           heroStats.forEach(stat => {
             const text = stat.textContent.trim();
-            if (text === '$80') animateNumber(stat, 80, '');
-            if (text === '5')   animateNumber(stat, 5, '');
+            if (text === '$80') animateNumber(stat, 80, '', '$');
+            if (text === '5')   animateNumber(stat, 5, '', '');
           });
           statsObs.unobserve(entry.target);
         }
